@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@layer menuBg {
+  .menuBg {
+    background-color: #3980ff;
+  }
+}
+@layer secHeader {
+  h2 {
+    font-size: 32px;
+    line-height: 103%;
+    padding-top: 50px;
+    font-weight: bold;
+    margin-bottom: 66px;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fce7f3;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
