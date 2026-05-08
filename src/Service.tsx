@@ -4,7 +4,7 @@ import model from './assets/icons/model.png';
 
 type slideContent = {
   id: number;
-  img: object;
+  img: string;
   h3: string;
   hiddenBlock?: string;
   btnFirst: string;

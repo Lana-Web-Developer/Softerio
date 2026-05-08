@@ -7,7 +7,7 @@ import sixthImg from './assets/stages_block/Stages_sixth.png';
 import seventhImg from './assets/stages_block/Stages_seventh.png';
 type stages = {
   id: number;
-  img: object;
+  img: string;
   h3: string;
   text: string;
 };

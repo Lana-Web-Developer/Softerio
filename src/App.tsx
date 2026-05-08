@@ -8,7 +8,6 @@ import DevStage from './DevStage.tsx';
 import Amount from './Amount.tsx';
 import Opportunity from './Opportunity.tsx';
 import Form from './Form.tsx';
-import FormList from './FormList.tsx';
 import About from './About.tsx';
 
 function App() {
@@ -18,15 +17,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route
-          path='*'
-          element={
-            <NotFound
-              path='/empty'
-              title='Страницы не существует. Это демонстрационная версия'
-            />
-          }
-        />
+        <Route path='*' element={<NotFound />} />
         <Route path='/devStages' element={<DevStage />} />
         <Route path='/amount' element={<Amount />} />
       </Routes>

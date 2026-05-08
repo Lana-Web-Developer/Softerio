@@ -1,14 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
-import {
-  type UseFormRegister,
-  type UseFormSetValue,
-  type FieldValues,
-} from 'react-hook-form';
 
 type listProps = {
-  register: UseFormRegister<FieldValues>;
+  register: any;
   name: string;
-  setValue: UseFormSetValue<FieldValues>;
+  setValue: any;
 };
 
 type sum = {

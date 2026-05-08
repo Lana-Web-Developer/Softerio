@@ -12,13 +12,13 @@ import doneRed from './assets/amount_block/ellipse_red.png';
 
 type optionsArr = {
   text: string;
-  isDone?: object;
+  isDone?: string;
 };
 type pockets = {
   id: number;
   h3: string;
-  img: object;
-  flag: object;
+  img: string;
+  flag: string;
   options: optionsArr[];
   amount: string;
 };
@@ -114,7 +114,7 @@ function Amount() {
                 <h3 className='ml-[20px]'>{el.h3}</h3>
               </div>
               <div className='mb-[50px]'>
-                {el.options.map((option, index) => (
+                {el.options.map((option) => (
                   <div
                     className='px-[5px] mx-auto grid w-[266px] grid-cols-[220px_40px] items-center gap-x-[5px] mb-[7px]'
                     key={`${el.id}-${option.text}`}

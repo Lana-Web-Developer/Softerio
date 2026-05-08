@@ -15,17 +15,11 @@ type FormData = z.infer<typeof formSchema>;
 
 function Form() {
   const [isLoading, setIsLoading] = useState(false);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    setError,
-    reset,
-    setValue,
-  } = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    mode: 'onChange',
-  });
+  const { register, handleSubmit, setError, reset, setValue } =
+    useForm<FormData>({
+      resolver: zodResolver(formSchema),
+      mode: 'onChange',
+    });
   const onSubmit = async (data: FormData) => {
     setIsLoading(true);
     try {
